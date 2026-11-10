@@ -1,0 +1,257 @@
+:root {
+    --primary-color: #1a4b84;
+    --primary-dark: #0f2d52;
+    --secondary-color: #eef4fb;
+    --accent-color: #d97706;
+    --text-color: #333333;
+    --text-light: #555555;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.logo-container img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    background-color: var(--white);
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+header .cnpj {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Banner de Aviso de Transição */
+.alert-banner {
+    background-color: #fef3c7;
+    border-left: 6px solid var(--accent-color);
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.alert-banner h2 {
+    color: #92400e;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.alert-banner p {
+    color: #78350f;
+    font-size: 0.98rem;
+}
+
+.alert-banner a {
+    color: #b45309;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.alert-banner a:hover {
+    color: #78350f;
+}
+
+/* Seções de Conteúdo */
+.section {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    border: 1px solid var(--border-color);
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.kardec-quote {
+    font-style: italic;
+    background-color: var(--secondary-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0 0.5rem 0;
+    border-radius: 0 4px 4px 0;
+    color: var(--primary-dark);
+    font-weight: 500;
+}
+
+/* Grid de Documentos */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.doc-card {
+    border: 1px solid var(--border-color);
+    padding: 1.25rem;
+    border-radius: 6px;
+    text-align: center;
+    background-color: var(--bg-light);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doc-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.doc-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-dark);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Lista de Atividades e Cursos */
+.activity-list {
+    list-style: none;
+}
+
+.activity-item {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.activity-item h3 {
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
+}
+
+.schedule-badge {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.4rem;
+}
+
+/* Transmissões Online */
+.online-transmission {
+    background-color: #fff8f0;
+    border: 1px solid #fee2e2;
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+}
+
+.online-transmission h3 {
+    color: #b91c1c;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    border-top: 4px solid var(--accent-color);
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .section {
+        padding: 1.25rem;
+    }
+}
