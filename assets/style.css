@@ -54,16 +54,6 @@ header p {
     font-size: 1.1rem;
     opacity: 0.9;
 }
-
-header .cnpj {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-    background-color: rgba(255, 255, 255, 0.15);
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-}
-
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -283,4 +273,15 @@ footer a:hover {
     .section {
         padding: 1.25rem;
     }
+}
+/* Moldura transparente do CNPJ no Rodapé */
+.cnpj {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
 }
