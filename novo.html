@@ -61,7 +61,7 @@
                 "Nascer, morrer, renascer ainda e progredir sempre. Tal é a lei." — Allan Kardec
             </div>
         </section>
-<!-- NOVA SEÇÃO: CONTRIBUIR -->
+<!-- CONTRIBUIR -->
         <section id="contribuir" class="section" style="background-color: var(--primary-color); color: var(--white); border-color: var(--primary-dark);">
             <h2 class="section-title" style="color: var(--white); border-bottom-color: rgba(255, 255, 255, 0.25);">Contribuir</h2>
             
@@ -85,8 +85,11 @@
                         <p>Agência: <strong>1422</strong> &nbsp;|&nbsp; Operação: <strong>1292</strong></p>
                         <p>Conta: <strong>0005777556065-1</strong></p>
                         <p>CNPJ: <strong>20.112.579/0001-91</strong></p>
-                        <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.2); font-size: 1.05rem; color: #fcd34d;">
-                            <strong>Chave PIX:</strong> 20112579000191 (CNPJ)
+                        <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.2); font-size: 1.05rem; color: #fcd34d; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;">
+                            <span><strong>Chave PIX:</strong> 20112579000191 (CNPJ)</span>
+                            <button type="button" onclick="navigator.clipboard.writeText('20112579000191'); this.innerText='Copiado!'; setTimeout(() => this.innerText='Copiar Chave', 2500);" style="background-color: var(--accent-color); color: var(--white); border: none; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.82rem; font-weight: 600; cursor: pointer;">
+                                Copiar Chave
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -97,7 +100,7 @@
                         Contribua via PIX
                     </p>
                     <img 
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020126360014br.gov.bcb.pix0114201125790001915204000053039865802BR5925CENTRO%20ESPIRITA%20CASIMIRO%206014BELO%20HORIZONTE62070503***63042C24" 
+                        src="img/qrcode-pix.png" 
                         alt="QR Code PIX - Centro Espírita Casimiro Cunha" 
                         style="width: 190px; height: 190px; display: block; margin: 0 auto; border-radius: 4px;"
                     >
@@ -109,13 +112,13 @@
 
             </div>
         </section>
-        <!-- 2. REUNIÕES ONLINE / TRANSMISSÕES -->
+        <!-- 2. TRANSMISSÕES / REUNIÕES ONLINE   -->
         <section id="transmissoes" class="section">
             <div class="online-transmission" style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 0;">
                 
                 <!-- Coluna da Esquerda: Conteúdo Atual -->
                 <div style="flex: 1 1 320px;">
-                    <h3>🎥 Reuniões Online / Transmissões</h3>
+                    <h3>🎥 Transmissões / Reuniões Online</h3>
                     <p>Acompanhe também nossas atividades transmitidas ao vivo pelo YouTube:</p>
                     <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">
                         <li><strong>Domingo (09h30):</strong> Reunião de Irradiação e Preces</li>
