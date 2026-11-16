@@ -18,7 +18,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px; /* Compensa a altura do menu fixo ao rolar */
+    scroll-padding-top: 135px; /* Compensa a altura do menu fixo ao rolar */
 }
 
 body {
@@ -26,7 +26,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-light);
-    padding-top: 56px; /* Espaço para a barra de navegação fixa */
+    padding-top: 125px; /* Espaço para a barra de navegação fixa */
 }
 
 /* Menu de Navegação Fixo */
