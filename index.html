@@ -6,33 +6,50 @@
     <title>Centro Espírita Casimiro Cunha | Belo Horizonte - MG</title>
 
     <!-- Ícone da Aba do Navegador (Favicon) -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
-    <!-- Folha de Estilos Externa -->
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- Folha de Estilos Externa (Nova Versão) -->
+    <link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <img src="img/logo.jpg" alt="Centro Espírita Casimiro Cunha">
+   <!-- MENU FIXO DE NAVEGAÇÃO (ONE-PAGE) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#topo">Home</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#contribuir">Contribuir</a></li>
+                <li><a href="#transmissoes">Transmissões</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#institucional">Institucional</a></li>
+            </ul>
         </div>
-        <h1>CECC - Centro Espírita Casimiro Cunha</h1>
+    </nav>
+
+    <header id="topo">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="Centro Espírita Casimiro Cunha">
+            </div>
+            <h1>Centro Espírita<br>Casimiro Cunha</h1>
+        </div>
     </header>
 
     <div class="container">
 
-        <!-- COMUNICADO DE TRANSIÇÃO (Com link para o site antigo) -->
+        <!-- COMUNICADO DE TRANSIÇÃO -->
         <div class="alert-banner">
             <h2>📌 Comunicado Oficial: Transição de Domínio</h2>
             <p>
-                Informamos aos frequentadores, parceiros e à comunidade que o domínio <strong>ceccbh.org.br</strong> é o <strong>novo endereço eletrônico oficial</strong> do Centro Espírita Casimiro Cunha. Enquanto concluímos a migração completa, você ainda pode acessar nosso site antigo  <a href="https://www.centrocasimirocunha.com.br" target="_blank" rel="noopener noreferrer">clicando aqui</a>. Ele será descontinuado em breve.
+                Informamos aos frequentadores, parceiros e à comunidade que o domínio <strong>ceccbh.org.br</strong> é o <strong>novo endereço eletrônico oficial</strong> do Centro Espírita Casimiro Cunha. Enquanto concluímos a migração completa, você ainda pode acessar nosso site antigo <a href="https://www.centrocasimirocunha.com.br" target="_blank" rel="noopener noreferrer">clicando aqui</a>. Ele será descontinuado em breve.
             </p>
         </div>
 
-        <!-- QUEM SOMOS E MISSÃO -->
-        <section class="section">
-            <h2 class="section-title">Quem Somos & Missão</h2>
+        <!-- 1. QUEM SOMOS -->
+        <section id="quem-somos" class="section">
+            <h2 class="section-title">Quem Somos</h2>
             <p>
                 O Centro Espírita Casimiro Cunha é uma organização religiosa sem fins lucrativos, sediada em Belo Horizonte – MG, que tem por missão (objeto e fins):
             </p>
@@ -46,101 +63,64 @@
                 "Nascer, morrer, renascer ainda e progredir sempre. Tal é a lei." — Allan Kardec
             </div>
         </section>
-
-        <!-- TRANSPARÊNCIA E DOCUMENTOS -->
-        <section class="section">
-            <h2 class="section-title">Transparência e Governança</h2>
-            <p>Em conformidade com as diretrizes estatutárias e institucionais, disponibilizamos os documentos oficiais da nossa casa:</p>
+<!-- CONTRIBUIR -->
+        <section id="contribuir" class="section" style="background-color: var(--primary-color); color: var(--white); border-color: var(--primary-dark);">
+            <h2 class="section-title" style="color: var(--white); border-bottom-color: rgba(255, 255, 255, 0.25);">Contribuir</h2>
             
-            <div class="docs-grid">
-                <div class="doc-card">
-                    <h3>Estatuto Social</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Documento que rege a constituição jurídica da instituição.</p>
-                    <a href="docs/estatuto.pdf" target="_blank" class="btn">Visualizar PDF</a>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                
+                <!-- Coluna da Esquerda: Texto e Dados Bancários -->
+                <div style="flex: 1 1 420px;">
+                    <p style="margin-bottom: 1rem; opacity: 0.95;">
+                        Há diversas formas de contribuir com o Casimiro Cunha: participando das tarefas e reuniões; auxiliando na limpeza e manutenção; doando alimentos, material de limpeza e outros gêneros; e também por meio de contribuição financeira.
+                    </p>
+                    <p style="margin-bottom: 1rem; opacity: 0.95;">
+                        O Casimiro Cunha é mantido integralmente por meio de doações. Estamos recebendo doações sempre aos segundos, terceiros e quartos finais de semana. Nestes dias, a Casa está aberta para suas doações aos sábados e domingos, entre 9h e 11h.
+                    </p>
+                    <p style="margin-bottom: 1.25rem; opacity: 0.95;">
+                        Se deseja contribuir financeiramente, você pode depositar diretamente em nossa conta:
+                    </p>
+
+                    <!-- Quadro de Dados Bancários -->
+                    <div style="background-color: rgba(15, 45, 82, 0.55); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 6px; padding: 1.15rem; font-size: 0.95rem; line-height: 1.7;">
+                        <p><strong>Caixa Econômica Federal</strong></p>
+                        <p>Agência: <strong>1422</strong> &nbsp;|&nbsp; Operação: <strong>1292</strong></p>
+                        <p>Conta: <strong>0005777556065-1</strong></p>
+                        <p>CNPJ: <strong>20.112.579/0001-91</strong></p>
+                        <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255, 255, 255, 0.2); font-size: 1.05rem; color: #fcd34d; display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem;">
+                            <span><strong>Chave PIX:</strong> 20112579000191 (CNPJ)</span>
+                            <button type="button" onclick="navigator.clipboard.writeText('20112579000191'); this.innerText='Copiado!'; setTimeout(() => this.innerText='Copiar Chave', 2500);" style="background-color: var(--accent-color); color: var(--white); border: none; padding: 0.3rem 0.75rem; border-radius: 4px; font-size: 0.82rem; font-weight: 600; cursor: pointer;">
+                                Copiar Chave
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="doc-card">
-                    <h3>Regimento Interno</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Normas de funcionamento dos departamentos e tarefas.</p>
-                    <a href="docs/regimento-interno.pdf" target="_blank" class="btn">Visualizar PDF</a>
+
+                <!-- Coluna da Direita: Quadro do QR Code PIX -->
+                <div style="flex: 0 1 250px; margin: 0 auto; text-align: center; background-color: var(--white); color: var(--text-color); padding: 1.25rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);">
+                    <p style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem; margin-bottom: 0.75rem;">
+                        Contribua via PIX
+                    </p>
+                    <img 
+                        src="img/qrcode-pix.png" 
+                        alt="QR Code PIX - Centro Espírita Casimiro Cunha" 
+                        style="width: 190px; height: 190px; display: block; margin: 0 auto; border-radius: 4px;"
+                    >
+                    <p style="font-size: 0.78rem; color: var(--text-light); margin-top: 0.75rem; line-height: 1.4;">
+                        Aponte a câmera do app do seu banco ou use a chave CNPJ:<br>
+                        <strong style="color: var(--primary-color); font-size: 0.85rem;">20.112.579/0001-91</strong>
+                    </p>
                 </div>
-                <div class="doc-card">
-                    <h3>Organograma</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Estrutura organizacional dos departamentos.</p>
-                    <a href="docs/organograma.pdf" target="_blank" class="btn">Visualizar PDF</a>
-                </div>
+
             </div>
         </section>
-
-        <!-- ATIVIDADES PRESENCIAIS E CURSOS -->
-        <section class="section">
-            <h2 class="section-title">Atividades Presenciais e Cursos</h2>
-            
-            <div class="activities-grid">
-                
-                <div class="activity-card">
-                    <img src="img/atendimento-fraterno.png" alt="Atendimento Fraterno" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Atendimento Fraterno</h3>
-                        <p>Atendimento pessoal aos que desejam conversar sobre questões pessoais e obter esclarecimento, orientação ou consolo à luz do Evangelho de Jesus e da Doutrina Espírita.</p>
-                        <span class="schedule-badge">Sexta: 19h30 às 21h00</span>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <img src="img/campanha-do-quilo.png" alt="Campanha do Quilo" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Campanha do Quilo</h3>
-                        <p>Arrecadação de gêneros alimentícios para auxiliar famílias em suas necessidades materiais, independente de sua orientação religiosa.</p>
-                        <span class="schedule-badge">Domingo: 9h00 às 11h00</span>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <img src="img/curso-espiritismo-basico.png" alt="Curso de Espiritismo Básico" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Curso de Espiritismo Básico</h3>
-                        <p>Destinado aos iniciantes com o objetivo de apresentar os princípios fundamentais da Doutrina Espírita.</p>
-                        <span class="schedule-badge">Domingo: 19h30 às 21h00</span>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <img src="img/obras-basicas-doutrina-espirita.png" alt="Obras Básicas da Doutrina Espírita" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Obras Básicas da Doutrina Espírita</h3>
-                        <p>Estudo aprofundado e contínuo das obras da Codificação Kardequiana.</p>
-                        <span class="schedule-badge">Domingo: 18h00 às 19h30</span>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <img src="img/curso-educacao-mediunica.png" alt="Curso de Educação Mediúnica" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Curso de Educação Mediúnica</h3>
-                        <p>Estudo e aprofundamento dos aspectos mediúnicos, visando o desenvolvimento seguro e o progresso moral do tarefeiro.</p>
-                        <span class="schedule-badge">Segunda-feira: 19h30 às 21h00</span>
-                    </div>
-                </div>
-
-                <div class="activity-card">
-                    <img src="img/curso-de-passes.png" alt="Curso de Passes" class="activity-img">
-                    <div class="activity-content">
-                        <h3>Curso de Passes</h3>
-                        <p>Promove e incentiva o estudo sobre o tema Passes, preparando o trabalhador para a prática segura na assistência espiritual.</p>
-                        <span class="schedule-badge">Quarta-feira: 19h45 às 20h45</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>            
-        
-        <section class="section">
-            <!-- TRANSMISSÕES ONLINE -->
-            <div class="online-transmission" style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+        <!-- 2. TRANSMISSÕES / REUNIÕES ONLINE   -->
+        <section id="transmissoes" class="section">
+            <div class="online-transmission" style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; margin-top: 0;">
                 
                 <!-- Coluna da Esquerda: Conteúdo Atual -->
                 <div style="flex: 1 1 320px;">
-                    <h3>🎥 Reuniões Online / Transmissões</h3>
+                    <h3>🎥 Transmissões / Reuniões Online</h3>
                     <p>Acompanhe também nossas atividades transmitidas ao vivo pelo YouTube:</p>
                     <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">
                         <li><strong>Domingo (09h30):</strong> Reunião de Irradiação e Preces</li>
@@ -169,15 +149,192 @@
 
             </div>
         </section>
+
+        <!-- 3. ATIVIDADES -->
+        <section id="atividades" class="section">
+            <h2 class="section-title">Atividades</h2>
+            <p style="margin-bottom: 1.25rem; color: var(--text-light);">
+                Confira abaixo a programação semanal das nossas atividades assistenciais, fraternas e doutrinárias. Clique nos dias da semana para expandir os horários:
+            </p>
+
+            <!-- DESTAQUES COM CARDS -->
+            <div class="activities-grid" style="margin-bottom: 2rem;">
+                <div class="activity-card">
+                    <img src="img/atendimento-fraterno.png" alt="Atendimento Fraterno" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Atendimento Fraterno & Plantão do Passe</h3>
+                        <p>Atendimento pessoal aos que desejam conversar sobre questões pessoais e obter esclarecimento, orientação ou consolo à luz do Evangelho.</p>
+                        <span class="schedule-badge">Domingo: 19h30 às 20h30</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/campanha-do-quilo.png" alt="Campanha do Quilo" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Campanha do Quilo</h3>
+                        <p>Arrecadação de gêneros alimentícios para auxiliar famílias em suas necessidades materiais, independente de sua orientação religiosa.</p>
+                        <span class="schedule-badge">Domingo: 09h00 às 11h00</span>
+                    </div>
+                </div>
+            </div>
+
+           <!-- GRADE COMPLETA POR DIA DA SEMANA (ACCORDION) -->
+            <div class="schedule-accordion">
+                
+                <details open>
+                    <summary>📅 Domingo</summary>
+                    <ul class="schedule-list">
+                        <li><span>Campanha do Quilo</span> <span class="time-tag">09h00 às 11h00</span></li>
+                        <li><span>Irradiação – YouTube Casimiro Cunha</span> <span class="time-tag">09h30 às 10h00</span></li>
+                        <li><span>Campanha Pãozinho (Preparo e Distribuição)</span> <span class="time-tag">13h00 às 21h00</span></li>
+                        <li><span>Grupo de Psicoterapia</span> <span class="time-tag">17h30 às 19h30</span></li>
+                        <li><span>Atendimento Fraterno – Plantão do Passe</span> <span class="time-tag">19h30 às 20h30</span></li>
+                        <li><span>Estudo das Obras Básicas da Doutrina</span> <span class="time-tag">19h30 às 20h30</span></li>
+                        <li style="background-color: #f8fafc; border-top: 2px solid var(--border-color);"><span><strong>1º Domingo do mês:</strong> Distribuição de Cesta Básica</span> <span class="time-tag">06h30 às 08h30</span></li>
+                        <li style="background-color: #f8fafc;"><span><strong>1º Domingo do mês:</strong> Visita Hospital Cristiano Machado</span> <span class="time-tag">14h00 às 16h00</span></li>
+                        <li style="background-color: #f8fafc;"><span><strong>3º Domingo do mês:</strong> Distribuição de Cesta Básica, Evangelização Infantil e Encontro com as Famílias Assistidas</span> <span class="time-tag">08h15 às 09h30</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Segunda-feira</summary>
+                    <ul class="schedule-list">
+                        <li><span>Plantão de Passes</span> <span class="time-tag">19h00 às 20h00</span></li>
+                        <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">19h00 às 19h30</span></li>
+                        <li><span>Estudo de O Livro dos Espíritos</span> <span class="time-tag">19h00 às 19h30</span></li>
+                        <li><span>Estudo de O Evangelho Segundo o Espiritismo</span> <span class="time-tag">19h30 às 20h30</span></li>
+                        <li><span>Implantação do Culto no Lar</span> <span class="time-tag">19h45 às 20h30</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Terça-feira</summary>
+                    <ul class="schedule-list">
+                        <li><span>Enxovalzinho (Costura)</span> <span class="time-tag">14h30 às 17h00</span></li>
+                        <li><span>Estudo das Obras de Emmanuel</span> <span class="time-tag">18h45 às 19h45</span></li>
+                        <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">19h00 às 20h00</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Quarta-feira</summary>
+                    <ul class="schedule-list">
+                        <li><span>Não há atividade aberta ao público</span> <span class="time-tag">Interno</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Quinta-feira</summary>
+                    <ul class="schedule-list">
+                        <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">20h00 às 21h00</span></li>
+                        <li><span>Reunião Pública e Passes (ao final)</span> <span class="time-tag">20h00 às 21h00</span></li>
+                        <li><span>Evangelização Infantil</span> <span class="time-tag">20h00 às 21h00</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Sexta-feira</summary>
+                    <ul class="schedule-list">
+                        <li><span>Tratamento por Fluidoterapia <em>(Necessário passar pelo Atendimento Fraterno no domingo às 19h30)</em></span> <span class="time-tag">19h30 às 21h00</span></li>
+                        <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">19h30 às 21h00</span></li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>📅 Sábado</summary>
+                    <ul class="schedule-list">
+                        <li><span>Evangelização Infantil</span> <span class="time-tag">09h00 às 10h15</span></li>
+                        <li><span>Reunião Pública e Passes (ao final)</span> <span class="time-tag">09h00 às 10h15</span></li>
+                        <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">10h30 às 11h00</span></li>
+                        <li><span>Reunião da Mocidade</span> <span class="time-tag">16h30 às 18h30</span></li>
+                        <li><span>Reunião Pública, Tratamento Espiritual e Passe</span> <span class="time-tag">19h30 às 20h30</span></li>
+                        <li style="background-color: #f8fafc; border-top: 2px solid var(--border-color);"><span><strong>2º Sábado do mês:</strong> Visita ao Asilo</span> <span class="time-tag">14h30 às 16h00</span></li>
+                    </ul>
+                </details>
+
+            </div>
+
+        <!-- 4. CURSOS -->
+        <section id="cursos" class="section">
+            <h2 class="section-title">Cursos & Estudos</h2>
+            <p style="margin-bottom: 1.25rem; color: var(--text-light);">
+                Conheça nossos grupos de estudo sistematizado e capacitação doutrinária:
+            </p>
+            
+            <div class="activities-grid">
+                
+                <div class="activity-card">
+                    <img src="img/obras-basicas-doutrina-espirita.png" alt="Obras Básicas da Doutrina Espírita" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Obras Básicas da Doutrina Espírita</h3>
+                        <p>Estudo aprofundado e contínuo das obras da Codificação Kardequiana.</p>
+                        <span class="schedule-badge">Domingo: 19h30 às 20h30</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-espiritismo-basico.png" alt="Curso de Espiritismo Básico" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Estudo das Obras de Kardec e Emmanuel</h3>
+                        <p>Estudo de O Livro dos Espíritos, O Evangelho Segundo o Espiritismo e Obras de Emmanuel.</p>
+                        <span class="schedule-badge">Segunda e Terça-feira</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-educacao-mediunica.png" alt="Curso de Educação Mediúnica" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Curso de Educação Mediúnica</h3>
+                        <p>Estudo e aprofundamento dos aspectos mediúnicos, visando o desenvolvimento seguro e o progresso moral do tarefeiro.</p>
+                        <span class="schedule-badge">Consulte a Secretaria</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-de-passes.png" alt="Curso de Passes" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Curso de Passes</h3>
+                        <p>Promove e incentiva o estudo sobre o tema Passes, preparando o trabalhador para a prática segura na assistência espiritual.</p>
+                        <span class="schedule-badge">Consulte a Secretaria</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       <!-- 5. INSTITUCIONAL -->
+        <section id="institucional" class="section">
+            <h2 class="section-title">Institucional</h2>
+            <p>Em conformidade com as diretrizes estatutárias e de transparência, disponibilizamos os documentos oficiais da nossa casa:</p>
+            
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h3>Estatuto Social</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Documento que rege a constituição jurídica da instituição.</p>
+                    <a href="docs/estatuto.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <h3>Regimento Interno</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Normas de funcionamento dos departamentos e tarefas.</p>
+                    <a href="docs/regimento-interno.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <h3>Organograma</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Estrutura organizacional dos departamentos.</p>
+                    <a href="docs/organograma.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 
-    <!-- RODAPÉ INSTITUCIONAL -->
-    <footer>
-        <p><strong>Centro Espírita Casimiro Cunha</strong></p>
-        <p>Organização religiosa sem fins lucrativos, fundada em 21/11/1949</p>
-        <p>Rua Nova Ponte, 46 - Salgado Filho - Belo Horizonte / Minas Gerais</p>
-        <div class="cnpj">CNPJ: 20.112.579/0001-91</div>
-    </footer>
+        <!-- RODAPÉ INSTITUCIONAL -->
+        <footer>
+            <p><strong>Centro Espírita Casimiro Cunha</strong></p>
+            <p>Organização religiosa sem fins lucrativos, fundada em 21/11/1949</p>
+            <p>Rua Nova Ponte, 46 - Salgado Filho - Belo Horizonte / Minas Gerais</p>
+            <div class="cnpj">CNPJ: 20.112.579/0001-91</div>
+        </footer>
 
 </body>
 </html>
