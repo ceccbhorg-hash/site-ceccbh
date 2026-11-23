@@ -134,19 +134,33 @@
                 <div style="flex: 1 1 320px; max-width: 100%;">
                     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); background-color: #000;">
                         <iframe 
+                            id="iframe-irradiacao"
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-                            src="https://www.youtube.com/embed/mQxzN6wAFSI?si=x4PIu-5P7tcnkhXB" 
-                            title="Irradiação 22/11/2026" 
+                            src="" 
+                            title="Irradiação" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             referrerpolicy="strict-origin-when-cross-origin" 
                             allowfullscreen>
                         </iframe>
                     </div>
-                    <p style="text-align: center; font-size: 0.88rem; font-weight: 600; color: var(--primary-dark); margin-top: 0.5rem;">
-                        Irradiação 22/11/2026
+                    <p id="texto-irradiacao" style="text-align: center; font-size: 0.88rem; font-weight: 600; color: var(--primary-dark); margin-top: 0.5rem;">
+                        Carregando...
                     </p>
                 </div>
 
+                <!-- Script que preenche o vídeo e a data automaticamente -->
+                <script src="irradiacao.js"></script>
+                <script>
+                    if (typeof CONFIG_IRRADIACAO !== 'undefined') {
+                        const titulo = "Irradiação " + CONFIG_IRRADIACAO.data;
+                        const iframe = document.getElementById("iframe-irradiacao");
+                        const legenda = document.getElementById("texto-irradiacao");
+
+                        iframe.src = "https://www.youtube.com/embed/" + CONFIG_IRRADIACAO.videoId;
+                        iframe.title = titulo;
+                        legenda.textContent = titulo;
+                    }
+                </script>
             </div>
         </section>
 
@@ -181,7 +195,7 @@
            <!-- GRADE COMPLETA POR DIA DA SEMANA (ACCORDION) -->
             <div class="schedule-accordion">
                 
-                <details open>
+                <details name="dias-semana">
                     <summary>📅 Domingo</summary>
                     <ul class="schedule-list">
                         <li><span>Campanha do Quilo</span> <span class="time-tag">09h00 às 11h00</span></li>
@@ -196,7 +210,7 @@
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Segunda-feira</summary>
                     <ul class="schedule-list">
                         <li><span>Plantão de Passes</span> <span class="time-tag">19h00 às 20h00</span></li>
@@ -207,7 +221,7 @@
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Terça-feira</summary>
                     <ul class="schedule-list">
                         <li><span>Enxovalzinho (Costura)</span> <span class="time-tag">14h30 às 17h00</span></li>
@@ -216,14 +230,14 @@
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Quarta-feira</summary>
                     <ul class="schedule-list">
                         <li><span>Não há atividade aberta ao público</span> <span class="time-tag">Interno</span></li>
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Quinta-feira</summary>
                     <ul class="schedule-list">
                         <li><span>Biblioteca – Empréstimo de Livros</span> <span class="time-tag">20h00 às 21h00</span></li>
@@ -231,7 +245,7 @@
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Sexta-feira</summary>
                     <ul class="schedule-list">
                         <li><span>Tratamento por Fluidoterapia <em>(Necessário passar pelo Atendimento Fraterno no domingo às 19h30)</em></span> <span class="time-tag">19h30 às 21h00</span></li>
@@ -239,7 +253,7 @@
                     </ul>
                 </details>
 
-                <details>
+                <details name="dias-semana">
                     <summary>📅 Sábado</summary>
                     <ul class="schedule-list">
                         <li><span>Evangelização Infantil</span> <span class="time-tag">09h00 às 10h15</span></li>
