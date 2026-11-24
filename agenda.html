@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<body>
+
+    <!-- O menu será carregado automaticamente aqui -->
+    <div id="menu-placeholder"></div>
+    <script src="assets/menu.js"></script>
+
+    <!-- CABEÇALHO INSTITUCIONAL -->
+    <header id="topo">
+...
+
+    <!-- MENU FIXO DE NAVEGAÇÃO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html#topo">Home</a></li>
+                <li><a href="index.html#quem-somos">Quem Somos</a></li>
+                <li><a href="index.html#contribuir">Contribuir</a></li>
+                <li><a href="index.html#transmissoes">Transmissões</a></li>
+                <li><a href="index.html#atividades">Atividades</a></li>
+                <li><a href="index.html#cursos">Cursos</a></li>
+                <li><a href="agenda.html" style="font-weight: 700; text-decoration: underline;">Agenda</a></li>
+                <li><a href="index.html#institucional">Institucional</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CABEÇALHO INSTITUCIONAL -->
+    <header id="topo">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="img/logo.jpg" alt="Centro Espírita Casimiro Cunha">
+            </div>
+            <h1>Centro Espírita<br>Casimiro Cunha</h1>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="container">
+
+        <section id="agenda-oficial" class="section">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                <h2 class="section-title" style="margin-bottom: 0; border-bottom: none;">🗓️ Agenda Oficial de Atividades e Eventos</h2>
+                <a href="index.html" class="btn" style="font-size: 0.85rem; padding: 0.45rem 0.9rem;">← Voltar para a Página Inicial</a>
+            </div>
+            <hr style="border: 0; border-top: 2px solid var(--primary-color, #1e3a8a); margin-bottom: 1.25rem; opacity: 0.2;">
+
+            <p style="margin-bottom: 1.25rem; color: var(--text-light);">
+                Acompanhe abaixo o calendário atualizado com as reuniões públicas, estudos doutrinários, campanhas assistenciais e eventos especiais do <strong>Centro Espírita Casimiro Cunha</strong>. Você pode alternar a visualização entre <em>Agenda (lista)</em>, <em>Semana</em> ou <em>Mês</em> no canto superior direito do quadro.
+            </p>
+
+            <!-- IFRAME GOOGLE AGENDA (RESPONSIVO E EM PORTUGUÊS 24H) -->
+            <div style="background-color: #ffffff; border: 1px solid var(--border-color, #e2e8f0); border-radius: 8px; padding: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);">
+                <iframe 
+                    src="https://calendar.google.com/calendar/embed?height=680&wkst=1&ctz=America%2FSao_Paulo&hl=pt_BR&showTz=0&mode=AGENDA&src=Y19hMjE2ZjA3NmY5OTA0NjVhYjkyN2ZmNjdlOTRlYWMxMDUyNWI3ODhkMWQ4NzE3MDg1ZGQ5MDU3ZmVlYzVhYjMxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233f51b5" 
+                    style="border: 0; border-radius: 6px; width: 100%; height: 680px; display: block;" 
+                    frameborder="0" 
+                    scrolling="no"
+                    title="Agenda Oficial - Centro Espírita Casimiro Cunha">
+                </iframe>
+            </div>
+
+            <!-- NOTA DE APOIO -->
+            <div style="margin-top: 1.25rem; padding: 0.9rem 1.1rem; background-color: #f8fafc; border-left: 4px solid var(--primary-color, #1e3a8a); border-radius: 4px; font-size: 0.9rem; color: var(--text-light);">
+                <strong>Dica:</strong> Caso utilize o Google Agenda em seu celular ou computador, clique no botão <strong>"+ Google Agenda"</strong> no canto inferior direito do calendário acima para sincronizar nossa programação diretamente na sua agenda pessoal.
+            </div>
+        </section>
+
+    </div>
+
+    <!-- RODAPÉ INSTITUCIONAL -->
+    <footer>
+        <p><strong>Centro Espírita Casimiro Cunha</strong></p>
+        <p>Organização religiosa sem fins lucrativos, fundada em 21/11/1949</p>
+        <p>Rua Nova Ponte, 46 - Salgado Filho - Belo Horizonte / Minas Gerais</p>
+        <div class="cnpj">CNPJ: 20.112.579/0001-91</div>
+    </footer>
+
+</body>
+</html>
