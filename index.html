@@ -19,11 +19,82 @@
 
     <div class="container">
 
+        <!-- CAMPANHA DE NATAL - DOE PANETONES (Layout Grid) -->
+        <div class="alert-banner" style="background-color: #fef2f2; border-left: 4px solid #b91c1c; margin-bottom: 1.5rem; padding: 2rem;">
+            
+            <!-- Container Grid: 3 colunas para desktop, 1 coluna para mobile -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; align-items: center;">
+                
+                <!-- Coluna da Esquerda: Texto (Ocupa 2 colunas - 1fr 1fr) -->
+                <div style="grid-column: span 2;">
+                    <span style="font-size: 0.85rem; font-weight: 700; color: #b91c1c; text-transform: uppercase; letter-spacing: 1px;">🎄 Campanha Solidária de Natal</span>
+                    <h2 style="color: #991b1b; font-size: 1.8rem; margin-top: 0.5rem; margin-bottom: 0.75rem; line-height: 1.2;">
+                        Natal é tempo de compartilhar!<br>
+                        <strong style="font-size: 2.4rem; color: #b91c1c;">Doe panetones</strong>
+                    </h2>
+                    
+                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text-color, #333); max-width: 650px;">
+                        Ajude a levar carinho à mesa das famílias assistidas pelo <strong>Centro Espírita Casimiro Cunha</strong>. Sua contribuição fará parte das doações de fim de ano do nosso centro.
+                    </p>
+                    
+                    <p style="font-weight: 600; color: #b91c1c; font-style: italic; margin-bottom: 1.5rem;">
+                        Vamos juntos tornar este Natal mais acolhedor!
+                    </p>
+
+                    <!-- Informações de Entrega (Botão destacado) -->
+                    <div style="background-color: #fff; border: 1px solid #fee2e2; border-radius: 8px; padding: 1rem 1.25rem; display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: 0 2px 5px rgba(185, 28, 28, 0.1);">
+                        <span style="font-size: 1.5rem;">📍</span>
+                        <span style="font-size: 1.1rem; color: #1f2937;"><strong>Onde entregar:</strong> Auditório do CECC</span>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Imagem (Ocupa 1 coluna) -->
+                <div style="grid-column: span 1; text-align: center;">
+                    <img 
+                        src="img/panetone.jpg" 
+                        alt="Campanha de Natal - Doe Panetones" 
+                        style="width: 100%; max-width: 280px; height: auto; display: block; margin: 0 auto; border-radius: 8px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));"
+                    >
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Media Query para Responsividade (Adicione isso no seu <style> global ou arquivo CSS) -->
+        <style>
+            @media (max-width: 768px) {
+                /* No mobile, o grid vira 1 coluna e inverte a ordem (imagem sobe) */
+                .alert-banner > div {
+                    grid-template-columns: 1fr !important;
+                    gap: 1rem !important;
+                    text-align: center;
+                }
+                .alert-banner > div > div:first-child { /* Bloco de texto */
+                    grid-column: span 1 !important;
+                    order: 2; /* Texto vai para baixo */
+                }
+                .alert-banner > div > div:last-child { /* Bloco da imagem */
+                    grid-column: span 1 !important;
+                    order: 1; /* Imagem vai para cima */
+                    margin-bottom: 1rem;
+                }
+                /* Ajuste de tamanhos de fonte para mobile */
+                .alert-banner h2 { font-size: 1.5rem !important; }
+                .alert-banner strong { font-size: 2rem !important; }
+            }
+        </style>
+
+
         <!-- COMUNICADO DE TRANSIÇÃO -->
         <div class="alert-banner">
             <h2>📌 Comunicado Oficial: Transição de Domínio</h2>
             <p>
-                Informamos aos frequentadores, parceiros e à comunidade que o domínio <strong>ceccbh.org.br</strong> é o <strong>novo endereço eletrônico oficial</strong> do Centro Espírita Casimiro Cunha. Enquanto concluímos a migração completa, você ainda pode acessar nosso site antigo <a href="https://www.centrocasimirocunha.com.br" target="_blank" rel="noopener noreferrer">clicando aqui</a>. Ele será descontinuado em breve.
+                Informamos aos frequentadores, parceiros e à comunidade que o domínio 
+                <strong>ceccbh.org.br</strong> é o <strong>novo endereço eletrônico oficial</strong> 
+                do Centro Espírita Casimiro Cunha. Enquanto concluímos a migração completa, você 
+                ainda pode acessar nosso site antigo 
+                <a href="https://www.centrocasimirocunha.com.br" target="_blank" rel="noopener noreferrer">
+                    clicando aqui</a>. Ele será descontinuado em breve.
             </p>
         </div>
 
