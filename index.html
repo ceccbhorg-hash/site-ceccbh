@@ -8,24 +8,14 @@
     <!-- Ícone da Aba do Navegador (Favicon) -->
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
-    <!-- Folha de Estilos Externa (Restaurada) -->
+    <!-- Folha de Estilos Externa -->
     <link rel="stylesheet" href="assets/style.css?v=5">
 </head>
 <body>
 
-    <!-- O menu será carregado automaticamente aqui pelo assets/menu.js -->
-    <div id="menu-placeholder"></div>
-    <script src="assets/menu.js"></script>
-
-    <!-- CABEÇALHO INSTITUCIONAL (Restaurado) -->
-    <header id="topo">
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="img/logo.jpg" alt="Centro Espírita Casimiro Cunha">
-            </div>
-            <h1>Centro Espírita<br>Casimiro Cunha</h1>
-        </div>
-    </header>
+    <!-- ESTRUTURA AUTOMÁTICA (MENU E CABEÇALHO VIA layout.js) -->
+    <div id="site-menu"></div>
+    <div id="site-header"></div>
 
     <div class="container">
 
@@ -141,7 +131,7 @@
                 </div>
 
                 <!-- Script que preenche o vídeo e a data automaticamente -->
-                <script src="irradiacao.js"></script>
+                <script src="assets/irradiacao.js"></script>
                 <script>
                     if (typeof CONFIG_IRRADIACAO !== 'undefined') {
                         const titulo = "Irradiação " + CONFIG_IRRADIACAO.data;
@@ -287,3 +277,70 @@
                     <img src="img/obras-basicas-doutrina-espirita.png" alt="Obras Básicas da Doutrina Espírita" class="activity-img">
                     <div class="activity-content">
                         <h3>Obras Básicas da Doutrina Espírita</h3>
+                        <p>Estudo aprofundado e contínuo das obras da Codificação Kardequiana.</p>
+                        <span class="schedule-badge">Domingo: 19h30 às 20h30</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-espiritismo-basico.png" alt="Curso de Espiritismo Básico" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Estudo das Obras de Kardec e Emmanuel</h3>
+                        <p>Estudo de O Livro dos Espíritos, O Evangelho Segundo o Espiritismo e Obras de Emmanuel.</p>
+                        <span class="schedule-badge">Segunda e Terça-feira</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-educacao-mediunica.png" alt="Curso de Educação Mediúnica" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Curso de Educação Mediúnica</h3>
+                        <p>Estudo e aprofundamento dos aspectos mediúnicos, visando o desenvolvimento seguro e o progresso moral do tarefeiro.</p>
+                        <span class="schedule-badge">Consulte a Secretaria</span>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="img/curso-de-passes.png" alt="Curso de Passes" class="activity-img">
+                    <div class="activity-content">
+                        <h3>Curso de Passes</h3>
+                        <p>Promove e incentiva o estudo sobre o tema Passes, preparando o trabalhador para a prática segura na assistência espiritual.</p>
+                        <span class="schedule-badge">Consulte a Secretaria</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. INSTITUCIONAL -->
+        <section id="institucional" class="section">
+            <h2 class="section-title">Institucional</h2>
+            <p>Em conformidade com as diretrizes estatutárias e de transparência, disponibilizamos os documentos oficiais da nossa casa:</p>
+            
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <h3>Estatuto Social</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Documento que rege a constituição jurídica da instituição.</p>
+                    <a href="docs/estatuto.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <h3>Regimento Interno</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Normas de funcionamento dos departamentos e tarefas.</p>
+                    <a href="docs/regimento-interno.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+                <div class="doc-card">
+                    <h3>Organograma</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem;">Estrutura organizacional dos departamentos.</p>
+                    <a href="docs/organograma.pdf" target="_blank" class="btn">Visualizar PDF</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- RODAPÉ AUTOMÁTICO E SCRIPT DE LAYOUT -->
+    <div id="site-footer"></div>
+    <script src="assets/layout.js"></script>
+
+</body>
+</html>
